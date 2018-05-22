@@ -1,0 +1,20 @@
+@uri = http://localhost:3000
+
+###
+GET {{uri}}/book
+
+###
+# get one book
+GET {{uri}}/books/1
+
+###
+# add a book
+
+POST {{uri}}/books
+Content-Type: application/json
+
+{
+    "title" : "The Lord of the Rings: The Fellowship of the Ring",
+    "description" : "The Fellowship of the Ring is the first of three volumes of the epic novel The Lord of the Rings by the English author J. R. R. Tolkien.",
+    "isbn" : "0345339703"
+}
