@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="/js/index.js"></script>
+    <script src="/js/vue.js"></script>
+    <script src="/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+    <link rel="stylesheet" type="text/css" href="/css/materialize.min.css">
+    <title>Bookshelf</title>
+</head>
+<body>
+    <div id="app">
+        <main>
+            <h1>Bookshelf</h1>
+            <loader :books="books">
+                <books-list :books="books" :delete-book="deleteBook">
+                </books-list>
+            </loader>
+        </main>
+    </div>
+</body>
+</html>
